@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 4rem;
+  background-color: rgb(40, 30, 24);
+  color: white;
+}
+/* main display area*/
+.displayArea {
+  display: grid;
+  justify-content: center;
+  gap: 4rem;
+  margin: 10rem 0;
+}
+.watch {
+  font-size: 7.2rem;
+  padding: 2rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+/*Button section*/
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  /* margin: 2rem; */
+  padding: 3rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.4rem;
+}
+.btn:hover {
+  color: white;
+  background-color: rgb(221, 90, 24);
+  font-size: 1.6rem;
+  padding: 2.5rem;
+  border: 1px solid white;
+}
+/*Lap section*/
+.lapContent {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 2rem 0;
+  font-size: 2.4rem;
+}
+@media (max-width: 768px) {
+  .watch {
+    font-size: 4.8rem;
+  }
+  .btn {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    margin: 2rem;
+  }
+  .watch {
+    font-size: 3.6rem;
+  }
+  .btn {
+    padding: 2rem;
+  }
+  .btn:hover {
+    padding: 1.5rem;
+  }
+  .lapContent {
+    font-size: 1.8rem;
+  }
+}
